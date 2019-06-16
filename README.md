@@ -2,9 +2,10 @@
 
 ## Homework Submission ##
 ### Additional Features ###
-I have included a lookup table that I scoured from yahoo.  I use it to add clarity to the tickers, what companies they represent and the category of business they are involved with.   On the linked spreadsheet there is a pivot table under charts for one of the years which is setup to
+I have included a lookup table that I scoured from Yahoo.  I use it to add clarity to the tickers, what companies they represent and the category of business they are involved with. I have also included a few extra columns, one for variance and one for the approximate trade volume in *dollars* based upon the idea that the average trade per day is the average between the high and the low. On any given day that may not be true, but over the 252 days of trading the **Central-Limit-Theorem** suggest that it is likely.  On the linked spreadsheet there is a pivot table under Charts worksheet for one of the years which is setup to display a chart.  The chart can be flipped between Total Volume and ApproxDollar Volume.  They do not even come close to mirroring one another.  The dominant trading is in Oil related categories; it is an interesting Bar chart.
+
 ```vba
-{
+ 
 Option Explicit
 Public Applicationinstance As New Excel.Application
  '
@@ -199,6 +200,6 @@ Function Min(ByVal Currentvalue As Double, Comp As Double) As Double
         Min = Comp
       End If
 End Function
-}
+ 
 ```
 

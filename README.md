@@ -3,7 +3,7 @@
 ## Homework Submission ##
 ### Additional Features ###
 I have included a lookup table that I scoured from yahoo.  I use it to add clarity to the tickers, what companies they represent and the category of business they are involved with.   On the linked spreadsheet there is a pivot table under charts for one of the years which is setup to
-```
+```vba
 {
 Option Explicit
 Public Applicationinstance As New Excel.Application
